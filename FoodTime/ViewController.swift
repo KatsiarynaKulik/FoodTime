@@ -6,10 +6,13 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
+    var context: NSManagedObjectContext!
     
     var array = [Date]()
     
