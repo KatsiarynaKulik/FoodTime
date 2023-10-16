@@ -2,7 +2,7 @@
 //  Meal+CoreDataClass.swift
 //  FoodTime
 //
-//  Created by Екатерина  on 25.04.23.
+//  Created by Katsiaryna Kulik  on 25.04.23.
 //
 //
 
