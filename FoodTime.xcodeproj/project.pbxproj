@@ -69,15 +69,9 @@
 		C4565AD529F85008007CF492 /* FoodTime */ = {
 			isa = PBXGroup;
 			children = (
-				C4565AD629F85008007CF492 /* AppDelegate.swift */,
-				C4565AD829F85008007CF492 /* SceneDelegate.swift */,
-				C4565ADA29F85008007CF492 /* ViewController.swift */,
-				C4565ADC29F85008007CF492 /* Main.storyboard */,
-				C4565AEA29F8544C007CF492 /* CoreDataStack.swift */,
-				C4565ADF29F85009007CF492 /* Assets.xcassets */,
-				C4565AE129F85009007CF492 /* LaunchScreen.storyboard */,
-				C4565AE429F85009007CF492 /* Info.plist */,
-				C4565AEC29F85625007CF492 /* FoodTime.xcdatamodeld */,
+				C47CB3042ADD7FF300B37CD6 /* View */,
+				C47CB3052ADED85B00B37CD6 /* Controller */,
+				C47CB3062ADED89000B37CD6 /* Supporting Files */,
 			);
 			path = FoodTime;
 			sourceTree = "<group>";
@@ -91,6 +85,36 @@
 				C4565AF229F85834007CF492 /* User+CoreDataProperties.swift */,
 			);
 			path = "Core Data Entities";
+			sourceTree = "<group>";
+		};
+		C47CB3042ADD7FF300B37CD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C4565ADC29F85008007CF492 /* Main.storyboard */,
+				C4565AE129F85009007CF492 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C47CB3052ADED85B00B37CD6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C4565AD629F85008007CF492 /* AppDelegate.swift */,
+				C4565AD829F85008007CF492 /* SceneDelegate.swift */,
+				C4565ADA29F85008007CF492 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C47CB3062ADED89000B37CD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4565AE429F85009007CF492 /* Info.plist */,
+				C4565AEA29F8544C007CF492 /* CoreDataStack.swift */,
+				C4565AEC29F85625007CF492 /* FoodTime.xcdatamodeld */,
+				C4565ADF29F85009007CF492 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,7 +345,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XN7SPBLRTW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FoodTime/Info.plist;
+				INFOPLIST_FILE = "FoodTime/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -349,7 +373,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XN7SPBLRTW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FoodTime/Info.plist;
+				INFOPLIST_FILE = "FoodTime/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
