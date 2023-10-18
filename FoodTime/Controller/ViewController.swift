@@ -66,6 +66,13 @@ class ViewController: UIViewController {
 
 // MARK: - UITableViewDataSource
 
+// Установить желтый фон для ячейки
+extension UITableViewCell {
+    func setYellowBackground() {
+        self.backgroundColor = UIColor.systemYellow
+    }
+}
+
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "My happy meal time"
@@ -83,9 +90,11 @@ extension ViewController: UITableViewDataSource {
             else { return cell }
         
         cell.textLabel!.text = dateFormatter.string(from: mealDate)
-        return cell
-    }
-    
+      // Установить желтый фон для ячейки
+      cell.setYellowBackground()
+      return cell
+  }
+
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         guard let meal = user.meals?[indexPath.row] as? Meal, editingStyle == .delete else { return }
         
